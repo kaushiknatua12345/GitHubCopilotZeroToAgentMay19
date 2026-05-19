@@ -1,0 +1,130 @@
+{
+  "common": {
+    "home": "Accueil",
+    "products": "Produits",
+    "about": "À propos",
+    "admin": "Admin",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "search": "Rechercher",
+    "cart": "Panier",
+    "checkout": "Passer commande",
+    "language": "Langue",
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "navigation": {
+    "manageProducts": "Gérer les produits",
+    "shoppingCart": "Panier",
+    "toggleDarkMode": "Changer le mode sombre/clair"
+  },
+  "welcome": {
+    "heroTitle": "Produits intelligents pour chats",
+    "heroSubtitle": "Propulsés par l'IA",
+    "shopNow": "Acheter maintenant",
+    "featuredProducts": "Produits vedettes",
+    "newArrivals": "Nouveautés",
+    "bestSellers": "Meilleures ventes",
+    "viewAll": "Voir tout"
+  },
+  "products": {
+    "title": "Nos produits",
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Rupture de stock",
+    "inStock": "En stock",
+    "price": "Prix",
+    "quantity": "Quantité",
+    "description": "Description",
+    "reviews": "Avis",
+    "rating": "Note",
+    "category": "Catégorie",
+    "searchProducts": "Rechercher des produits...",
+    "noProductsFound": "Aucun produit trouvé",
+    "filterBy": "Filtrer par",
+    "sortBy": "Trier par",
+    "lowToHigh": "Prix : croissant",
+    "highToLow": "Prix : décroissant",
+    "newest": "Plus récents",
+    "featured": "Vedettes"
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "continueShopping": "Continuer mes achats",
+    "subtotal": "Sous-total",
+    "total": "Total",
+    "proceedToCheckout": "Passer à la caisse",
+    "remove": "Retirer",
+    "updateQuantity": "Modifier la quantité",
+    "itemAdded": "Article ajouté au panier",
+    "itemRemoved": "Article retiré du panier"
+  },
+  "checkout": {
+    "title": "Passer commande",
+    "shippingAddress": "Adresse de livraison",
+    "paymentMethod": "Mode de paiement",
+    "orderSummary": "Récapitulatif de commande",
+    "placeOrder": "Valider la commande",
+    "orderConfirmation": "Confirmation de commande",
+    "thankYou": "Merci pour votre commande !",
+    "orderNumber": "Numéro de commande",
+    "estimatedDelivery": "Livraison estimée"
+  },
+  "auth": {
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "signUp": "S'inscrire",
+    "createAccount": "Créer un compte",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "dontHaveAccount": "Vous n'avez pas de compte ?"
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutDescription": "OctoCAT Supply est le leader des produits intelligents propulsés par l'IA pour vos compagnons félins. Notre technologie innovante améliore le bien-être de votre chat grâce à une surveillance intelligente, des divertissements interactifs et des solutions de confort personnalisées.",
+    "account": "Compte",
+    "myCart": "Mon panier",
+    "checkout": "Passer commande",
+    "shoppingDetails": "Détails d'achat",
+    "order": "Commande",
+    "helpCenter": "Centre d'aide",
+    "helpfulLinks": "Liens utiles",
+    "services": "Services",
+    "supports": "Assistance",
+    "feedback": "Commentaires",
+    "termsConditions": "Conditions générales",
+    "privacyPolicy": "Politique de confidentialité",
+    "socialMedia": "Réseaux sociaux",
+    "allRightsReserved": "Tous droits réservés"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "ourMission": "Notre mission",
+    "ourStory": "Notre histoire",
+    "ourTeam": "Notre équipe",
+    "contactUs": "Nous contacter"
+  },
+  "admin": {
+    "title": "Tableau de bord admin",
+    "manageProducts": "Gérer les produits",
+    "addProduct": "Ajouter un produit",
+    "editProduct": "Modifier le produit",
+    "deleteProduct": "Supprimer le produit",
+    "productName": "Nom du produit",
+    "productDescription": "Description du produit",
+    "productPrice": "Prix du produit",
+    "productImage": "Image du produit",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce produit ?"
+  },
+  "messages": {
+    "success": "Succès",
+    "error": "Erreur",
+    "loading": "Chargement...",
+    "pleaseWait": "Veuillez patienter...",
+    "noResults": "Aucun résultat trouvé"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "common": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About us",
+    "admin": "Admin",
+    "login": "Login",
+    "logout": "Logout",
+    "search": "Search",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "language": "Language",
+    "english": "English",
+    "french": "French"
+  },
+  "navigation": {
+    "manageProducts": "Manage Products",
+    "shoppingCart": "Shopping cart",
+    "toggleDarkMode": "Toggle dark/light mode"
+  },
+  "welcome": {
+    "heroTitle": "Smart Cat Products",
+    "heroSubtitle": "Powered by AI",
+    "shopNow": "Shop Now",
+    "featuredProducts": "Featured Products",
+    "newArrivals": "New Arrivals",
+    "bestSellers": "Best Sellers",
+    "viewAll": "View All"
+  },
+  "products": {
+    "title": "Our Products",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "price": "Price",
+    "quantity": "Quantity",
+    "description": "Description",
+    "reviews": "Reviews",
+    "rating": "Rating",
+    "category": "Category",
+    "searchProducts": "Search products...",
+    "noProductsFound": "No products found",
+    "filterBy": "Filter by",
+    "sortBy": "Sort by",
+    "lowToHigh": "Price: Low to High",
+    "highToLow": "Price: High to Low",
+    "newest": "Newest",
+    "featured": "Featured"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "proceedToCheckout": "Proceed to Checkout",
+    "remove": "Remove",
+    "updateQuantity": "Update quantity",
+    "itemAdded": "Item added to cart",
+    "itemRemoved": "Item removed from cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingAddress": "Shipping Address",
+    "paymentMethod": "Payment Method",
+    "orderSummary": "Order Summary",
+    "placeOrder": "Place Order",
+    "orderConfirmation": "Order Confirmation",
+    "thankYou": "Thank you for your order!",
+    "orderNumber": "Order Number",
+    "estimatedDelivery": "Estimated Delivery"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "signUp": "Sign Up",
+    "createAccount": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  },
+  "footer": {
+    "about": "About",
+    "aboutDescription": "OctoCAT Supply is the leading provider of AI-powered smart products for your feline companions. Our innovative technology enhances your cat's wellbeing through intelligent monitoring, interactive entertainment, and personalized comfort solutions.",
+    "account": "Account",
+    "myCart": "My Cart",
+    "checkout": "Checkout",
+    "shoppingDetails": "Shopping Details",
+    "order": "Order",
+    "helpCenter": "Help Center",
+    "helpfulLinks": "Helpful Links",
+    "services": "Services",
+    "supports": "Supports",
+    "feedback": "Feedback",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "socialMedia": "Social Media",
+    "allRightsReserved": "All rights reserved"
+  },
+  "about": {
+    "title": "About Us",
+    "ourMission": "Our Mission",
+    "ourStory": "Our Story",
+    "ourTeam": "Our Team",
+    "contactUs": "Contact Us"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "manageProducts": "Manage Products",
+    "addProduct": "Add Product",
+    "editProduct": "Edit Product",
+    "deleteProduct": "Delete Product",
+    "productName": "Product Name",
+    "productDescription": "Product Description",
+    "productPrice": "Product Price",
+    "productImage": "Product Image",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirmDelete": "Are you sure you want to delete this product?"
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "loading": "Loading...",
+    "pleaseWait": "Please wait...",
+    "noResults": "No results found"
+  }
+}

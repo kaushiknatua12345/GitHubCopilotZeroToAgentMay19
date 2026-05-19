@@ -2,12 +2,15 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { useCart } from '../context/CartContext';
+import { useTranslation } from '../context/LanguageContext';
 import { useState } from 'react';
+import LanguageSelector from './LanguageSelector';
 
 export default function Navigation() {
   const { isLoggedIn, isAdmin, logout } = useAuth();
   const { darkMode, toggleTheme } = useTheme();
   const { totalItems } = useCart();
+  const { t } = useTranslation();
   const [adminMenuOpen, setAdminMenuOpen] = useState(false);
 
   return (
@@ -29,16 +32,16 @@ export default function Navigation() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <Link to="/" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>Home</Link>
-              <Link to="/products" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>Products</Link>
-              <Link to="/about" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>About us</Link>
+              <Link to="/" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>{t('common.home')}</Link>
+              <Link to="/products" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>{t('common.products')}</Link>
+              <Link to="/about" className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}>{t('common.about')}</Link>
               {isAdmin && (
                 <div className="relative">
                   <button 
                     onClick={() => setAdminMenuOpen(!adminMenuOpen)}
                     className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium flex items-center transition-colors`}
                   >
-                    Admin
+                    {t('common.admin')}
                     <svg 
                       className={`ml-1 h-4 w-4 transform ${adminMenuOpen ? 'rotate-180' : ''} transition-transform`}
                       fill="none" 
@@ -59,7 +62,7 @@ export default function Navigation() {
                           className={`block px-4 py-2 text-sm ${darkMode ? 'text-light hover:bg-primary hover:text-white' : 'text-gray-700 hover:bg-primary hover:text-white'} transition-colors`}
                           onClick={() => setAdminMenuOpen(false)}
                         >
-                          Manage Products
+                          {t('navigation.manageProducts')}
                         </Link>
                         {/* Space for other entity management links */}
                       </div>
@@ -70,7 +73,8 @@ export default function Navigation() {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Link to="/cart" className="relative p-2 rounded-full focus:outline-none transition-colors" aria-label="Shopping cart">
+            <LanguageSelector />
+            <Link to="/cart" className="relative p-2 rounded-full focus:outline-none transition-colors" aria-label={t('navigation.shoppingCart')}>
               <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 ${darkMode ? 'text-light' : 'text-gray-700'} hover:text-primary transition-colors`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
               </svg>
@@ -83,7 +87,7 @@ export default function Navigation() {
             <button
               onClick={toggleTheme}
               className="p-2 rounded-full focus:outline-none transition-colors"
-              aria-label="Toggle dark/light mode"
+              aria-label={t('navigation.toggleDarkMode')}
             >
               {darkMode ? (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-300" viewBox="0 0 20 20" fill="currentColor">
@@ -99,13 +103,12 @@ export default function Navigation() {
               <>
                 <span className={`${darkMode ? 'text-light' : 'text-gray-700'} text-sm transition-colors`}>
                   {isAdmin && <span className="text-primary">(Admin) </span>}
-                  Welcome!
                 </span>
                 <button 
                   onClick={logout}
                   className={`${darkMode ? 'text-light hover:text-primary' : 'text-gray-700 hover:text-primary'} px-3 py-2 rounded-md text-sm font-medium transition-colors`}
                 >
-                  Logout
+                  {t('common.logout')}
                 </button>
               </>
             ) : (
@@ -113,7 +116,7 @@ export default function Navigation() {
                 to="/login" 
                 className="bg-primary hover:bg-accent text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Login
+                {t('common.login')}
               </Link>
             )}
           </div>

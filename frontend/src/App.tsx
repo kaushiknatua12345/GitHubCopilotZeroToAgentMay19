@@ -8,6 +8,7 @@ import Login from './components/Login';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import { CartProvider } from './context/CartContext';
+import { LanguageProvider } from './context/LanguageContext';
 import AdminProducts from './components/admin/AdminProducts';
 import Cart from './components/entity/cart/Cart';
 import { useTheme } from './context/ThemeContext';
@@ -38,13 +39,15 @@ function ThemedApp() {
 
 function App() {
   return (
-    <AuthProvider>
-      <ThemeProvider>
-        <CartProvider>
-          <ThemedApp />
-        </CartProvider>
-      </ThemeProvider>
-    </AuthProvider>
+    <LanguageProvider>
+      <AuthProvider>
+        <ThemeProvider>
+          <CartProvider>
+            <ThemedApp />
+          </CartProvider>
+        </ThemeProvider>
+      </AuthProvider>
+    </LanguageProvider>
   );
 }
 
