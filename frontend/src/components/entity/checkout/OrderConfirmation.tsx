@@ -66,7 +66,7 @@ export default function OrderConfirmation() {
     return (
       <div className={`min-h-screen ${darkMode ? 'bg-dark' : 'bg-gray-100'} pt-20 px-4`}>
         <div className="max-w-3xl mx-auto text-center py-20">
-          <h2 className={`text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Order not found</h2>
+          <h1 className={`text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Order not found</h1>
           <Link to="/products" className="mt-4 inline-block text-primary hover:text-accent">Continue Shopping</Link>
         </div>
       </div>
