@@ -135,7 +135,7 @@ export default function Products() {
                 </div>
                 
                 <div className="p-4 flex flex-col flex-grow">
-                  <h3 className={`text-xl font-semibold ${darkMode ? 'text-light' : 'text-gray-800'} mb-2 transition-colors duration-300`}>{product.name}</h3>
+                  <h2 className={`text-xl font-semibold ${darkMode ? 'text-light' : 'text-gray-800'} mb-2 transition-colors duration-300`}>{product.name}</h2>
                   <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mb-4 flex-grow transition-colors duration-300`}>{product.description}</p>
                   <div className="space-y-4 mt-auto">
                     <div className="flex justify-between items-center">

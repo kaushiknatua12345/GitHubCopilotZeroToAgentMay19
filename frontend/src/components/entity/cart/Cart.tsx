@@ -36,7 +36,7 @@ export default function Cart() {
           <svg className={`mx-auto h-24 w-24 ${darkMode ? 'text-gray-600' : 'text-gray-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
           </svg>
-          <h2 className={`mt-4 text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Your cart is empty</h2>
+          <h1 className={`mt-4 text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Your cart is empty</h1>
           <p className={`mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Add some products to get started!</p>
           <Link
             to="/products"

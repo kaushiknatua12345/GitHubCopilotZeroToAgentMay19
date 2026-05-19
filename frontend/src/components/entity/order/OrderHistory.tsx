@@ -49,7 +49,7 @@ export default function OrderHistory() {
     return (
       <div className={`min-h-screen ${darkMode ? 'bg-dark' : 'bg-gray-100'} pt-20 px-4`}>
         <div className="max-w-3xl mx-auto text-center py-20">
-          <h2 className={`text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Please log in to view your orders</h2>
+          <h1 className={`text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>Please log in to view your orders</h1>
           <Link to="/login" className="mt-4 inline-block bg-primary hover:bg-accent text-white px-6 py-3 rounded-lg font-medium transition-colors">
             Login
           </Link>
@@ -86,7 +86,7 @@ export default function OrderHistory() {
           <svg className={`mx-auto h-24 w-24 ${darkMode ? 'text-gray-600' : 'text-gray-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
           </svg>
-          <h2 className={`mt-4 text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>No orders yet</h2>
+          <h1 className={`mt-4 text-2xl font-bold ${darkMode ? 'text-light' : 'text-gray-800'}`}>No orders yet</h1>
           <p className={`mt-2 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Start shopping to see your orders here!</p>
           <Link to="/products" className="mt-6 inline-block bg-primary hover:bg-accent text-white px-6 py-3 rounded-lg font-medium transition-colors">
             Browse Products
@@ -110,9 +110,9 @@ export default function OrderHistory() {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className={`text-lg font-semibold ${darkMode ? 'text-light' : 'text-gray-800'}`}>
+                  <h2 className={`text-lg font-semibold ${darkMode ? 'text-light' : 'text-gray-800'}`}>
                     Order #{order.orderId}
-                  </h3>
+                  </h2>
                   <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                     {new Date(order.orderDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </p>
