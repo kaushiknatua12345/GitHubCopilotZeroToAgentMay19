@@ -64,8 +64,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Name</label>
+            <label htmlFor="product-name" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Name</label>
             <input
+              id="product-name"
               type="text"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -74,8 +75,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Description</label>
+            <label htmlFor="product-description" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Description</label>
             <textarea
+              id="product-description"
               value={formData.description}
               onChange={(e) => setFormData({ ...formData, description: e.target.value })}
               className={`w-full px-3 py-2 ${darkMode ? 'bg-gray-700 text-light' : 'bg-gray-100 text-gray-800'} rounded transition-colors duration-300`}
@@ -83,8 +85,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Price</label>
+            <label htmlFor="product-price" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Price</label>
             <input
+              id="product-price"
               type="number"
               value={formData.price}
               onChange={(e) => setFormData({ ...formData, price: parseFloat(e.target.value) })}
@@ -95,8 +98,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>SKU</label>
+            <label htmlFor="product-sku" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>SKU</label>
             <input
+              id="product-sku"
               type="text"
               value={formData.sku}
               onChange={(e) => setFormData({ ...formData, sku: e.target.value })}
@@ -105,8 +109,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Unit</label>
+            <label htmlFor="product-unit" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Unit</label>
             <input
+              id="product-unit"
               type="text"
               value={formData.unit}
               onChange={(e) => setFormData({ ...formData, unit: e.target.value })}
@@ -115,8 +120,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Image Name</label>
+            <label htmlFor="product-imgName" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Image Name</label>
             <input
+              id="product-imgName"
               type="text"
               value={formData.imgName}
               onChange={(e) => setFormData({ ...formData, imgName: e.target.value })}
@@ -125,8 +131,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             />
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Supplier</label>
+            <label htmlFor="product-supplierId" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Supplier</label>
             <select
+              id="product-supplierId"
               value={formData.supplierId}
               onChange={(e) => setFormData({ ...formData, supplierId: parseInt(e.target.value) })}
               className={`w-full px-3 py-2 ${darkMode ? 'bg-gray-700 text-light' : 'bg-gray-100 text-gray-800'} rounded transition-colors duration-300`}
@@ -140,8 +147,9 @@ export default function ProductForm({ product, suppliers, onClose, onSave }: Pro
             </select>
           </div>
           <div>
-            <label className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Discount (%)</label>
+            <label htmlFor="product-discount" className={`block ${darkMode ? 'text-light' : 'text-gray-700'} mb-1 transition-colors duration-300`}>Discount (%)</label>
             <input
+              id="product-discount"
               type="number"
               value={formData.discount !== undefined ? formData.discount * 100 : ''}
               onChange={(e) => {
