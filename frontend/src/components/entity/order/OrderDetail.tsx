@@ -166,6 +166,7 @@ export default function OrderDetailPage() {
                 value={order.status}
                 onChange={(e) => handleStatusChange(e.target.value)}
                 disabled={updating}
+                aria-label="Update order status"
                 className={`px-3 py-2 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-light' : 'bg-white border-gray-300 text-gray-800'} focus:border-primary focus:outline-none`}
               >
                 {STATUSES.map(s => (

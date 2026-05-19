@@ -102,6 +102,7 @@ export default function Cart() {
                         type="number"
                         min="1"
                         value={item.quantity}
+                        aria-label={`Quantity for ${item.name}`}
                         onChange={(e) => {
                           const val = parseInt(e.target.value);
                           if (!isNaN(val) && val > 0) {
@@ -133,6 +134,7 @@ export default function Cart() {
                   <input
                     type="text"
                     placeholder="Coupon Code"
+                    aria-label="Coupon Code"
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
                     className={`px-4 py-2 rounded-lg border ${darkMode ? 'bg-gray-800 border-gray-600 text-light placeholder-gray-500' : 'bg-white border-gray-300 text-gray-800 placeholder-gray-400'} focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none`}
